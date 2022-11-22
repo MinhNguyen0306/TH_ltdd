@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="350dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="50dp"
+            android:text="Log out"
+            android:layout_gravity="center_horizontal"/>
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Id"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <EditText
+            android:id="@+id/edt_tenkhoahoc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ten khoa hoc"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <EditText
+            android:id="@+id/edt_tenthuonggoi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Ten thuong goi"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <EditText
+            android:id="@+id/edt_dactinh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Dac tinh"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <EditText
+            android:id="@+id/edt_mausac"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Mau sac"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+        <EditText
+            android:id="@+id/edt_hinhanh"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Hinh anh"
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <Button
+            android:id="@+id/btn_add_ca"
+            android:layout_width="350dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="50dp"
+            android:text="Them ca"
+            android:layout_gravity="center_horizontal"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_casi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
