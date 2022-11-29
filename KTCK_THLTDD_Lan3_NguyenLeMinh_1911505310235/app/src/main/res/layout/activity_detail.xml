@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <ImageView
+        android:id="@+id/img_detail_ngonngu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ariana"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/detail_ten_ngonngu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:text="Ten ngon ngu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:text="Them vi du ngon ngu"/>
+
+    <EditText
+        android:id="@+id/edt_them_vidu"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <Button
+        android:id="@+id/btn_luu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:text="Luu"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:text="Danh sach vi du"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_detail_ngonngu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+</LinearLayout>
